@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%);
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: #ffffff;
+    padding: 30px 0;
+    width: 260px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.logo-acc{
+    display: flex;
+}
+
+.logo-pict{
+    background-color: #66bb66;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #e8f5e9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.hungy{
+    margin-left: 12px;
+    color: #66bb66;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0;
+    display: flex;
+    height: 40px;
+}
+.hungy-text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+     border-left: 2px solid #636e72;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.btn-sidebar{
+    padding: 13px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #636e72;
+    gap: 15px;
+    border-right: 4px solid transparent;
+    border-radius: 7px;
+}
+
+.btn-sidebar:hover{
+    background-color: #e8f5e9;
+    border-right-color: #66bb66;
+}
+
+.btn-sidebar:active{
+    background-color: #e8f5e9;
+}
+.main-content{
+    margin-left: 260px;
+    flex: 1;
+    padding: 0px;
+}
+.name-header{
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+.halo-user{
+    font-weight: 500;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.acc-profile{
+    display: flex;
+    padding: 0px 0 0px 0px;
+}
+.notice, .profile-pict{
+    justify-content: end;
+    text-align: end;
+    width: max-content;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.10);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.notice{
+    margin-right: 20px;
+}
