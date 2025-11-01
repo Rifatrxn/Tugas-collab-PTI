@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%);
+    background: linear-gradient(135deg, #F4A896, #FFDAB9);
     font-family: 'Poppins', sans-serif;
     color: #2d3436;
 }
@@ -17,8 +17,8 @@ body{
 }
 
 .sidebar{
-    background-color: #ffffff;
-    padding: 30px 0;
+    background-color: rgb(255, 245, 238);
+    padding: 20px 0;
     width: 260px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     height: 100vh;
@@ -31,7 +31,7 @@ body{
 }
 
 .logo-pict{
-    background-color: #66bb66;
+    background-color: #F4A896;
     gap: 12px;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,7 @@ body{
     height: 40px;
     border-radius: 50%;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .button{
@@ -51,7 +52,7 @@ body{
 
 .btn-sidebar{
     padding: 20px;
-    background-color: #ffffff;
+    background-color: rgb(255, 245, 238);
     cursor: pointer;
     color: #636e72;
     gap: 15px;
@@ -63,8 +64,8 @@ body{
 }
 
 .btn-sidebar:hover{
-    background-color: #e8f5e9;
-    border-right-color: #66bb66;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-right-color: #F4A896;
 }
 
 .btn-sidebar:active{
@@ -121,7 +122,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #ffffff;
+    flex-direction: column;
+    background-color: #FFF5EE;
     width: 85%;
     border-radius: 15px;
     height: max-content;
@@ -132,4 +134,32 @@ body{
     display: flex;
     width: 100%;
     padding: 30px;
+}
+
+.total-kalori{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.total-kalori-text{
+    font-size: 5vh;
+    font-weight: bold;
+    color: #66bb6a;
+}
+.total-kalori-text-2{
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #636e72;
+}
+
+.progress-bar{
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #636e72;
 }
