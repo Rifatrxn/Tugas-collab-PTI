@@ -1,195 +1,231 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(135deg, #F4A896, #FFDAB9);
-    font-family: 'Poppins', sans-serif;
-    color: #2d3436;
+body {
+  background: linear-gradient(135deg, #f4a896, #ffdab9);
+  font-family: "Poppins", sans-serif;
+  color: #2d3436;
 }
 
-.container{
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.sidebar{
-    background-color: rgb(255, 245, 238);
-    padding: 20px 0;
-    width: 260px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
-    height: 100vh;
-    position: fixed;
-    overflow-y: auto;
+.sidebar {
+  background-color: rgb(255, 245, 238);
+  padding: 20px 0;
+  width: 260px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
 }
 
-.logo-acc{
-    display: flex;
+.logo-acc {
+  display: flex;
 }
 
-.logo-pict{
-    background-color: #F4A896;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-bottom: 1px solid #e8f5e9;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 20px;
-    cursor: pointer;
+.logo-pict {
+  background-color: #f4a896;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #e8f5e9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-.button{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+.button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
-.btn-sidebar{
-    padding: 20px;
-    background-color: rgb(255, 245, 238);
-    cursor: pointer;
-    color: #636e72;
-    gap: 15px;
-    border-radius: 7px;
-    font-size: 17px;
-    font-weight: 400;
-    border: none;
-    border-right: 4px solid transparent;
+.btn-sidebar {
+  padding: 20px;
+  background-color: rgb(255, 245, 238);
+  cursor: pointer;
+  color: #636e72;
+  gap: 15px;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  border-right: 4px solid transparent;
 }
 
-.btn-sidebar:hover{
-    background-color: rgba(0, 0, 0, 0.05);
-    border-right-color: #F4A896;
+.btn-sidebar:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-right-color: #f4a896;
 }
 
-.btn-sidebar:active{
-    background-color: #e8f5e9;
+.btn-sidebar:active {
+  background-color: #e8f5e9;
 }
-.main-content{
-    margin-left: 260px;
-    width: 100%;
-    flex: 1;
-    padding: 0px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.main-content {
+  margin-left: 260px;
+  width: 100%;
+  flex: 1;
+  padding: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.name-header{
-    justify-content: space-between;
-    display: flex;
-    padding: 20px 0px 20px 0px;
-    width: 85%;
+.name-header {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  width: 85%;
 }
-.halo-user{
-    font-weight: 600;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+.halo-user {
+  font-weight: 600;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
-.acc-profile{
-    display: flex;
-    padding: 0px 0 0px 0px;
+.acc-profile {
+  display: flex;
+  padding: 0px 0 0px 0px;
 }
-.notice, .profile-pict{
-    justify-content: end;
-    text-align: end;
-    width: max-content;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.10);
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
+.notice,
+.profile-pict {
+  justify-content: end;
+  text-align: end;
+  width: max-content;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
 }
-.notice{
+.notice {
+  margin-right: 20px;
+}
+
+.card {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff5ee;
+  width: 85%;
+  border-radius: 15px;
+  height: max-content;
+}
+
+.main-card {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.text-kalori-atas {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.total-kalori {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.total-kalori-text {
+  font-size: 5vh;
+  font-weight: bold;
+  color: #66bb6a;
+}
+.total-kalori-text-2 {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #636e72;
+}
+
+.progress-bar {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #636e72;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.persen-progress-bar {
+  width: 80%;
+  background: linear-gradient(to right, #f4a896 100%, #ffdab9 0%);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+
+.card-nutrition {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  display: grid;
+  padding: 0px 0px 0px 0px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+.card-karbo,
+.card-protein,
+.card-lemak {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  width: fit-content;
+  margin: 10px 0px 0px 0px;
+  width: auto;
+}
+
+.card-karbo{
     margin-right: 20px;
 }
 
-.card{
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF5EE;
-    width: 85%;
-    border-radius: 15px;
-    height: max-content;
+.card-lemak{
+    margin-left: 20px;
 }
 
-.main-card{
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 800px) {
+  .card-nutrition {
+    margin: 15px 0px 0px 0px;
     width: 100%;
-    padding: 20px;
-}
+    display: grid;
+    padding: 0px 0px 0px 0px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);  
+  }
 
-.text-kalori-atas{
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-}
-
-.total-kalori{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.total-kalori-text{
-    font-size: 5vh;
-    font-weight: bold;
-    color: #66bb6a;
-}
-.total-kalori-text-2{
-    margin-top: 8px;
-    font-weight: 300;
-    font-size: 15px;
-    color: #636e72;
-}
-
-.progress-bar{
-    height: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #636e72;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.persen-progress-bar{
-    width: 80%;
-    background: linear-gradient(to right, #F4A896 100%, #FFDAB9 0%) ;
-    height: 100%;
-    border-radius: 10px;
-    transition: width 0.5s;
-}
-
-.card-nutrition{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.card-karbo, .card-protein, .card-lemak{
+  .card-karbo,
+  .card-protein,
+  .card-lemak {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -198,19 +234,21 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 7px;
     width: fit-content;
-    gap: 14px;
-    width: 33%;
-    margin: 10px;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 
-.card-nut-text{
-    font-size: small;
-    font-weight: 300;
-    color: #636e72;
+.card-nut-text {
+  font-size: small;
+  font-weight: 300;
+  color: #636e72;
 }
 
-.g{
-    font-size: small;
-    font-weight: 600;
-    color: #636e72;
+.g {
+  font-size: small;
+  font-weight: 600;
+  color: #636e72;
 }
