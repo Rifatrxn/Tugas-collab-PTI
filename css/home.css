@@ -181,3 +181,36 @@ body{
     border-radius: 10px;
     transition: width 0.5s;
 }
+
+.card-nutrition{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card-karbo, .card-protein, .card-lemak{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    width: fit-content;
+    gap: 14px;
+    width: 33%;
+    margin: 10px;
+}
+
+.card-nut-text{
+    font-size: small;
+    font-weight: 300;
+    color: #636e72;
+}
+
+.g{
+    font-size: small;
+    font-weight: 600;
+    color: #636e72;
+}
