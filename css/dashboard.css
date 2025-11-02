@@ -118,7 +118,7 @@ body {
   margin-right: 20px;
 }
 
-.card {
+.card-1 {
   padding: 0;
   justify-content: center;
   align-items: center;
@@ -205,12 +205,12 @@ body {
   width: auto;
 }
 
-.card-karbo{
-    margin-right: 20px;
+.card-karbo {
+  margin-right: 20px;
 }
 
-.card-lemak{
-    margin-left: 20px;
+.card-lemak {
+  margin-left: 20px;
 }
 
 @media (max-width: 800px) {
@@ -220,7 +220,7 @@ body {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(1, 1fr);  
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card-karbo,
@@ -251,4 +251,251 @@ body {
   font-size: small;
   font-weight: 600;
   color: #636e72;
+}
+
+.card-2 {
+  width: 85%;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-2-inner {
+  background-color: #fff5ee;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 30px max-content max-content;
+  height: max-content;
+  width: 23%;
+  border: 2px solid transparent;
+}
+
+.card-2-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.card-2-inner img {
+  width: 30px;
+  height: 30px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.card-2-inner h5 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.card-breakfast-time,
+.card-lunch-time,
+.card-dinner-time,
+.card-snack-time {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 10px;
+  color: #636e72;
+  margin-top: 15px;
+}
+.card-2-inner h4 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin-top: 10px;
+}
+.card-breakfast-kkal,
+.card-lunch-kkal,
+.card-dinner-kkal,
+.card-snack-kkal {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #636e72;
+}
+
+/* Tablet preview */
+@media (min-width: 800px) and (max-width: 1180px) {
+  .card-2 {
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    gap: 14px;
+  }
+
+  .card-2-inner {
+    background-color: #fff5ee;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 30px max-content max-content;
+    height: max-content;
+    width: 100%;
+    border: 2px solid transparent;
+  }
+
+  .card-2-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .card-2-inner img {
+    width: 30px;
+    height: 30px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card-2-inner h5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card-breakfast-time,
+  .card-lunch-time,
+  .card-dinner-time,
+  .card-snack-time {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 10px;
+    color: #636e72;
+    margin-top: 15px;
+  }
+  .card-2-inner h4 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-top: 10px;
+  }
+
+  .card-breakfast-kkal,
+  .card-lunch-kkal,
+  .card-dinner-kkal,
+  .card-snack-kkal {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #636e72;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 795px) {
+  .card-2 {
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .card-2-inner {
+    background-color: #fff5ee;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 30px max-content max-content;
+    height: max-content;
+    width: 100%;
+    border: 2px solid transparent;
+  }
+
+  .card-2-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .card-2-inner img {
+    width: 30px;
+    height: 30px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card-2-inner h5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card-breakfast-time,
+  .card-lunch-time,
+  .card-dinner-time,
+  .card-snack-time {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 10px;
+    color: #636e72;
+    margin-top: 15px;
+  }
+  .card-2-inner h4 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-top: 10px;
+  }
+
+  .card-breakfast-kkal,
+  .card-lunch-kkal,
+  .card-dinner-kkal,
+  .card-snack-kkal {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #636e72;
+  }
+}
+
+.card-3{
+    justify-content: space-between;
+    display: flex;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.card-3-section{
+    width: 32.5%;
+    background-color: #fff5ee;
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    align-items: center;   
+    text-align: center; 
+    font-size: small;
+    font-size: 10px;
+}
+
+.card-3-section img {
+    width:20px;
+    height: 20px;
+    margin-right: 15px;
+    background-color: #ffdab9;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.card-3-section:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .card-3{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 15px;
+}
+
+.card-3-section{
+    width: 100%;
+    margin-bottom: 15px;
+}
 }
