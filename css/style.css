@@ -1,0 +1,126 @@
+/* Global CSS Styling */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100dvh;
+    color: #4a4a4a;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 90%;
+}
+
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.header ul{
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-rows: (repeat, 1fr);
+    padding-left: 0;
+    text-align: center;
+}
+
+.header li{
+    list-style: none;
+    font-size: medium;
+    font-weight: 300;
+    grid-row: 1;
+    width: max-content;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    padding: 0 35px 0 35px;
+}
+
+.header h3{
+    font-size: 3vh;
+    color: #F4A896;
+}
+
+.header li a:hover{
+    color: #F4A896;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.nav img{ 
+    width: 30px;
+    height: 30px;
+}
+
+.footer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-row-1{
+    width: 90%;
+    display: flex;
+    justify-self: center;
+}
+
+.footer-col{
+    margin-right: 50px;
+}
+
+.footer-col {
+    list-style: none;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.footer-col h3{
+    color: #F4A896;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #4a4a4a;
+    line-height: 4vh;
+    width: max-content;
+    height: max-content;
+}
+
+.footer a:hover{
+    color: #F4A896;
+}
+
+.footer-row-2{
+    align-items: normal;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    border-top: #4a4a4a 1px solid;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: small;
+}
+/* Bagian home & food log // Rifat */
