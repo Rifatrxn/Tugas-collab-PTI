@@ -1,0 +1,115 @@
+* {
+box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#hungy-layout {
+    background-color: #fce8e3;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tampilan-foto, 
+.informasi-makanan, 
+.harga-bahan, 
+.laman-waktu, 
+.tombol-simpan, 
+.informasi-nilai-gizi {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.tampilan-foto,
+.informasi-makanan,
+.harga-bahan,
+.informasi-nilai-gizi {
+    grid-column: 1 / 2;
+}
+.laman-waktu,
+.tombol-simpan {
+    grid-column: 2 / 3;
+}
+.tampilan-foto img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.informasi-makanan {
+    padding-bottom: 5px;
+}
+.informasi-makanan h3 {
+    color: #ff8c7a;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.tombol-harga a {
+    display: inline-block;
+    background-color: #ff8c7a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+.informasi-nilai-gizi h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.informasi-nilai-gizi {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    text-align: center;
+
+}
+.kalori, .protein, .karbo, .lemak {
+    background-color: #f7f7f7;
+    padding: 15px 10px;
+    border-radius: 10px;
+    flex-basis: 22%; 
+}
+.informasi-nilai-gizi h5 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    color: #ff8c7a; 
+}
+.laman-waktu ul {
+    list-style: none;
+}
+
+.laman-waktu li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tombol-simpan {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+.tombol-simpan a {
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.tombol-simpan a:first-child {
+    background-color: #ff8c7a;
+    color: white;
+    border: 2px solid #ff8c7a;
+}
+.tombol-simpan a:last-child {
+    background-color: white;
+    color: #ff8c7a;
+    border: 2px solid #ff8c7a;
+}
