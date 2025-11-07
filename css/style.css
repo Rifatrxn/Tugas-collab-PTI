@@ -1,126 +1,175 @@
 /* Global CSS Styling */
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    height: 100dvh;
-    color: #4a4a4a;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100dvh;
+  color: #4a4a4a;
+  background-color: #f8f9fe;
 }
 
-.container{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.header{
-    width: 90%;
+.header {
+  width: 90%;
 }
 
-.nav{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    width: 100%;
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  width: 100%;
 }
 
-.header ul{
-    justify-content: space-between;
-    align-items: center;
-    display: grid;
-    text-align: center;
-    grid-template-rows: (repeat, 1fr);
-    padding-left: 0;
-    text-align: center;
+.header ul {
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  grid-template-rows: (repeat, 1fr);
+  padding-left: 0;
+  text-align: center;
 }
 
-.header li{
-    list-style: none;
-    font-size: medium;
-    font-weight: 300;
-    grid-row: 1;
-    width: max-content;
-    cursor: pointer;
-    text-align: center;
-    width: max-content;
-    padding: 0 35px 0 35px;
+.header li {
+  list-style: none;
+  font-size: medium;
+  font-weight: 300;
+  grid-row: 1;
+  width: max-content;
+  cursor: pointer;
+  text-align: center;
+  width: max-content;
+  padding: 0 35px 0 35px;
 }
 
-.header h3{
-    font-size: 3vh;
-    color: #F4A896;
+.header h3 {
+  font-size: 3vh;
+  color: #f4a896;
 }
 
-.header li a:hover{
-    color: #F4A896;
+.header li a:hover {
+  color: #f4a896;
 }
 
-.header ul li a{
-    text-decoration: none;
-    color: #4a4a4a;
+.header ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
-.nav img{ 
-    width: 30px;
-    height: 30px;
+.nav img {
+  width: 30px;
+  height: 30px;
 }
 
-.footer{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.footer {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.footer-row-1{
-    width: 90%;
-    display: flex;
-    justify-self: center;
-}
-
-.footer-col{
-    margin-right: 50px;
+.footer-row-1 {
+  width: 90%;
+  display: flex;
+  justify-self: center;
 }
 
 .footer-col {
-    list-style: none;
-    color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+  margin-right: 50px;
 }
 
-.footer-col h3{
-    color: #F4A896;
+.footer-col {
+  list-style: none;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
-.footer a{
-    text-decoration: none;
-    color: #4a4a4a;
-    line-height: 4vh;
-    width: max-content;
-    height: max-content;
+.footer-col h3 {
+  color: #f4a896;
 }
 
-.footer a:hover{
-    color: #F4A896;
+.footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+  line-height: 4vh;
+  width: max-content;
+  height: max-content;
 }
 
-.footer-row-2{
-    align-items: normal;
-    width: 90%;
-    display: flex;
-    justify-self: center;
-    border-top: #4a4a4a 1px solid;
-    padding-top: 20px;
-    margin-top: 20px;
-    font-size: small;
+.footer a:hover {
+  color: #f4a896;
+}
+
+.footer-row-2 {
+  align-items: normal;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  border-top: #4a4a4a 1px solid;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: small;
 }
 /* Bagian home & food log // Rifat */
+.main-1-home {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(320deg,#f8f9fe 2% , #4c7ceb 100%, #6a9edc 90%, #f8f9fe 1%);
+  /* background: url(../assets/assets-home-foodlog/main-1-content.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center; */
+}
+
+.main-1-home-content {
+  width: 90%;
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+  padding: 100px;
+}
+
+.main-1-home-content h2 {
+  font-size: 5vh;
+  color: #4a4a4a;
+  line-height: 10px;
+}
+
+.main-1-home-content p {
+  color: #4a4a4a;
+}
+
+.content-home-1 {
+  width: 60%;
+  padding: 0;
+}
+
+.content-home-2 {
+  width: 40%;
+  padding: 0;
+  background: url(../assets/assets-home-foodlog/main-1-content.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  width: 100%;
+}
