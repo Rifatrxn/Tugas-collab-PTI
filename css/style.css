@@ -1,4 +1,10 @@
 /* Global CSS Styling */
+@font-face{
+  font-family: 'Momo Signature';
+  src: url(../assets/font/Momo_Signature/MomoSignature-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0;
   margin: 0;
@@ -51,17 +57,20 @@ body {
   width: max-content;
   cursor: pointer;
   text-align: center;
-  width: max-content;
   padding: 0 35px 0 35px;
 }
 
 .header h3 {
   font-size: 3vh;
-  color: #f4a896;
+  color: #4c7ceb;
+  font-family: "Momo Signature", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .header li a:hover {
-  color: #f4a896;
+  color: #4c7ceb;
+  transition: 0.1s ease-in-out;
 }
 
 .header ul li a {
@@ -99,7 +108,7 @@ body {
 }
 
 .footer-col h3 {
-  color: #f4a896;
+  color: #4c7ceb;
 }
 
 .footer a {
@@ -111,7 +120,7 @@ body {
 }
 
 .footer a:hover {
-  color: #f4a896;
+  color: #4c7ceb;
 }
 
 .footer-row-2 {
@@ -131,7 +140,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(320deg,#f8f9fe 2% , #4c7ceb 100%, #6a9edc 90%, #f8f9fe 1%);
+  background: linear-gradient(0deg,#f8f9fe 0% , #4c7ceb 100%, #6a9edc 0%);
   /* background: url(../assets/assets-home-foodlog/main-1-content.jpg);
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -148,12 +157,22 @@ body {
 
 .main-1-home-content h2 {
   font-size: 5vh;
-  color: #4a4a4a;
+  color: #f8f9fe;
   line-height: 10px;
 }
 
 .main-1-home-content p {
-  color: #4a4a4a;
+  color: #f8f9fe;
+  margin-bottom: 40px;
+}
+
+.main-1-home-content a {
+    padding: 15px;
+    background-color: #4c7ceb;
+    border-radius: 10px;
+    color: #f8f9fe;
+    margin-right: 13px;
+    cursor: pointer;
 }
 
 .content-home-1 {
@@ -166,10 +185,28 @@ body {
   padding: 0;
   background: url(../assets/assets-home-foodlog/main-1-content.jpg);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
   padding: 0;
   margin: 0;
   height: 300px;
   width: 100%;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content-home-2:hover{
+    box-shadow: rgba(0, 0, 0, 0.50);
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
 }
