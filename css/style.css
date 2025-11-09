@@ -109,6 +109,7 @@ body {
 
 .footer-col h3 {
   color: #4c7ceb;
+  font-family: 'Momo Signature';
 }
 
 .footer a {
@@ -180,7 +181,7 @@ body {
   padding: 0;
 }
 
-.content-home-2 {
+.content-2-home-1 {
   width: 40%;
   padding: 0;
   background: url(../assets/assets-home-foodlog/main-1-content.jpg);
@@ -197,8 +198,8 @@ body {
   cursor: pointer;
 }
 
-.content-home-2:hover{
-    box-shadow: rgba(0, 0, 0, 0.50);
+.content-2-home-1:hover{
+    box-shadow: rgba(0, 0, 0, 100);
 }
 
 @keyframes float {
@@ -209,4 +210,39 @@ body {
     50%{
         transform: translateY(-15px);
     }
+}
+
+.main-2-home{
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 4px;
+  background-color: #e5e6eb;
+}
+
+.main-2-home h2{
+  font-size: 4.1vh;
+}
+
+.main-2-home p{
+  font-size: small;
+}
+
+.main-2-content-1{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card-main-2{
+  height: max-content;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fe;
 }
