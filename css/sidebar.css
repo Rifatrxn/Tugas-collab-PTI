@@ -1,0 +1,72 @@
+.sidebar{
+    background-color: rgb(255, 245, 238);
+    padding: 20px 0;
+    width: 260px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.logo-acc{
+    display: flex;
+}
+
+.logo-pict{
+    background-color: #F4A896;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #e8f5e9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btn-sidebar{
+    padding: 20px;
+    background-color: rgb(255, 245, 238);
+    cursor: pointer;
+    color: #636e72;
+    gap: 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-right: 4px solid transparent;
+}
+
+.btn-sidebar:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-right-color: #F4A896;
+}
+
+.btn-sidebar:active{
+    background-color: #e8f5e9;
+}
+
+/* HTML COMPONENT */
+/* <div class="sidebar">
+        <div class="logo-acc">
+          <!-- <img src="./assets/pict1.png" class="logo-pict"> -->
+          <div class="logo-pict">H</div>
+        </div>
+
+        <div class="button">
+          <button class="btn-sidebar">Dashboard</button>
+          <button class="btn-sidebar">Food log</button>
+          <button class="btn-sidebar">Reminder</button>
+          <button class="btn-sidebar">Nutrition Intake</button>
+          <button class="btn-sidebar">Recipe</button>
+          <button class="btn-sidebar">Budget Counter</button>
+        </div>
+</div> */
