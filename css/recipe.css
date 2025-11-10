@@ -1,115 +1,368 @@
 * {
-box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#hungy-layout {
-    background-color: #fce8e3;
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.tampilan-foto, 
-.informasi-makanan, 
-.harga-bahan, 
-.laman-waktu, 
-.tombol-simpan, 
-.informasi-nilai-gizi {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-.tampilan-foto,
-.informasi-makanan,
-.harga-bahan,
-.informasi-nilai-gizi {
-    grid-column: 1 / 2;
-}
-.laman-waktu,
-.tombol-simpan {
-    grid-column: 2 / 3;
-}
-.tampilan-foto img {
+body {
     width: 100%;
-    border-radius: 10px;
-    display: block;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
-.informasi-makanan {
-    padding-bottom: 5px;
+.header { 
+    width: 100%; 
 }
-.informasi-makanan h3 {
-    color: #ff8c7a;
-    font-size: 1.8em;
+.container { 
+    width: 100%; 
+}
+
+#nav-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    /*
+    width: 100%; */
+    padding: 15px; 
+}
+.logo {
+    padding-left: 10px;
+}
+.logo h3 {
+    color: #4c7ceb;
+    font-family: "Momo Signature", cursive;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.nav-menu ul {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+}
+.nav-menu ul li {
+    list-style: none;
+    width: max-content;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 300;
+    
+}
+.nav-menu ul li:hover {
+    color: #4c7ceb;
+}
+.sign-in {
+    display: flex;
+    justify-content: center;
+    
+}
+.sign-in ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;    
+    font-weight: bold;
+}
+.sign-in ul li {
+    list-style: none;
+    background-color: #36454F;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3 ease;
+}
+.sign-in ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.sign-in ul li a:hover {
+    color: #4c7ceb;
+}
+.main-top-page {
+    background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%);
+    width: 100%;
+    flex-direction: column;
+    height: max-content;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+.gambar-atas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background: none;
+}
+.gambar-atas img {
+    width: 100px;
+    height: 100px;
+    background-image: none;
+}
+.teks-atas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #f8f9fe;
+}
+.deskripsi-atas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.deskripsi-atas p {
+    padding-top: 10px;
+    color: #f8f9fe;
+    font-size: small;
+}
+.footer {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+.footer-row-1 {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
+
+.footer-col {
+  margin-right: 50px;
+}
+
+.footer-col {
+  list-style: none;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.footer-col h3 {
+  color: #698ae8;
+  font-family: "Momo Signature", cursive;
+  margin-bottom: 5px;
+}
+.footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+  line-height: 4vh;
+  width: max-content;
+  height: max-content;
+}
+
+.footer a:hover {
+  color: #4c7ceb;
+}
+
+.footer-row-2 {
+  align-items: normal;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  border-top: #4a4a4a 1px solid;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: small;
+}
+.sidebar {
+   display: flex;
+   /* justify-content: left; */
+   flex-direction: column;
+   margin-top: 40px;
+   float: left;
+   margin-left: 50px;
+  
+}
+.filter-group{
+    height: max-content;
+}
+.search-bar input {
+   width: 200px;
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 7px;
+   margin-left: 40px;
+}
+.pembatasan-diet{
+    flex-direction: column;
+    display: flex;
+}
+.pembatasan-diet h3 {
+    margin-left: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
-.tombol-harga a {
-    display: inline-block;
-    background-color: #ff8c7a;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-    font-size: 0.9em;
+.pembatasan-diet label {
+    padding: 5px;
+    margin-left: 40px;
+    width: 100%;
 }
-.informasi-nilai-gizi h2 {
-    color: #333;
-    margin-bottom: 20px;
+.pembatasan-diet label input[type="checkbox"] {
+    margin-right: 8px ;
+    cursor: pointer;
 }
-.informasi-nilai-gizi {
+.jenis-makanan {
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    text-align: center;
-
 }
-.kalori, .protein, .karbo, .lemak {
-    background-color: #f7f7f7;
-    padding: 15px 10px;
-    border-radius: 10px;
-    flex-basis: 22%; 
+.jenis-makanan h3 {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.informasi-nilai-gizi h5 {
-    font-size: 1.6em;
-    margin-bottom: 5px;
-    color: #ff8c7a; 
+.jenis-makanan label {
+    padding: 5px;
+    margin-left: 40px;
+    width: 100%;
 }
-.laman-waktu ul {
-    list-style: none;
+.jenis-makanan label input[type="checkbox"] {
+    margin-right: 8px ;
+    cursor: pointer;
 }
-
-.laman-waktu li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.tombol-simpan {
+.masakan {
     display: flex;
     flex-direction: column;
-    padding: 20px; 
+    margin-bottom: 35px;
 }
-.tombol-simpan a {
-    text-align: center;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 5px 0;
+.masakan h3 {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.tombol-simpan a:first-child {
-    background-color: #ff8c7a;
-    color: white;
-    border: 2px solid #ff8c7a;
+.masakan label {
+    padding: 5px;
+    margin-left: 40px;
+    width: 100%;
 }
-.tombol-simpan a:last-child {
-    background-color: white;
-    color: #ff8c7a;
-    border: 2px solid #ff8c7a;
+.masakan label input[type="checkbox"] {
+    margin-right: 8px ;
+    cursor: pointer;
+}
+.card-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 22px;
+    width: 70%;
+    margin-bottom: 60px;
+}
+.recipe-card {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.recipe-card :hover {
+    color: #4e4d4d ;
+}
+.salad-quinoia-mediterania {
+    width: 1fr;
+    height: 1fr;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    
+}
+.details span{
+    display: flex;
+    gap: 5px;
+}
+.details span img {
+    width: 12px;
+    height: 12px;
+    padding-left: 7px;
+}
+.salad-quinoia-mediterania:nth-child(1) {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+}
+.salad-quinoia-mediterania:nth-child(2) {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+}
+.salad-quinoia-mediterania:nth-child(3) {
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+}
+.salad-quinoia-mediterania:nth-child(4) {
+    display: grid;
+    grid-row: 1;
+    grid-column: 4;
+}
+.salad-quinoia-mediterania:nth-child(5) {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+}
+.salad-quinoia-mediterania:nth-child(6) {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+}
+.salad-quinoia-mediterania:nth-child(7) {
+    display: grid;
+    grid-row: 2;
+    grid-column: 3;
+}
+.salad-quinoia-mediterania:nth-child(8) {
+    display: grid;
+    grid-row: 2;
+    grid-column: 4;
+}
+.salad-quinoia-mediterania img{
+   width: 100%;
+   height: 100px;
+   object-fit: cover;
+}
+.recipe-info {
+    padding: 15px;
+}
+.recipe-info h4 {
+    margin-bottom: 7px;
+    font-size: large;
+    width: 80%;
+}
+.recipe-info p{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: smaller;
+    font-weight: 200;
+}
+
+.details{
+    display: flex;
+}
+
+.details span {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+}
+.tags {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    gap: 5px;
+    padding-top: 7px;
+    font-size: x-small
 }
