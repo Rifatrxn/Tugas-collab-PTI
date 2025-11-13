@@ -4,28 +4,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    width: 100%;
-    height: 100vh;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%);
+    background-repeat: no-repeat;
 }
-.header { 
-    width: 100%; 
+.header {  
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .container { 
-    width: 100%; 
+    max-width: 1300px;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 #nav-layout {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     color: black;
     /*
     width: 100%; */
-    padding: 15px; 
+    padding: 10px 20px ; 
+    position: sticky;
+    width: 97%;
 }
 .logo {
     padding-left: 10px;
@@ -35,9 +47,9 @@ body {
     font-family: "Momo Signature", cursive;
 }
 .nav-menu {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: center; */
 }
 .nav-menu ul {
     justify-content: center;
@@ -58,8 +70,8 @@ body {
     color: #4c7ceb;
 }
 .sign-in {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     
 }
 .sign-in ul {
@@ -83,7 +95,6 @@ body {
     color: #4c7ceb;
 }
 .main-top-page {
-    background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%);
     width: 100%;
     flex-direction: column;
     height: max-content;
@@ -100,7 +111,7 @@ body {
 .gambar-atas img {
     width: 100px;
     height: 100px;
-    background-image: none;
+    /* background-image: none; */
 }
 .teks-atas {
     display: flex;
@@ -128,6 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 25px;
+  max-width: 1300px;
 }
 .footer-row-1 {
   width: 90%;
@@ -155,7 +167,7 @@ body {
 .footer a {
   text-decoration: none;
   color: #4a4a4a;
-  line-height: 4vh;
+  line-height: 30px;
   width: max-content;
   height: max-content;
 }
@@ -175,16 +187,16 @@ body {
   font-size: small;
 }
 .sidebar {
-   display: flex;
+   /* display: flex; */
    /* justify-content: left; */
-   flex-direction: column;
+   /* flex-direction: column; */
    margin-top: 40px;
    float: left;
    margin-left: 50px;
   
 }
 .filter-group{
-    height: max-content;
+    /* height: max-content; */
 }
 .search-bar input {
    width: 200px;

@@ -1,0 +1,310 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%) no-repeat;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  max-width: 1300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f8f9fe;
+}
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 90%;
+}
+
+.header ul {
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  grid-template-rows: (repeat, 1fr);
+  padding-left: 0;
+  text-align: center;
+}
+
+.header li {
+  list-style: none;
+  font-size: medium;
+  font-weight: 300;
+  grid-row: 1;
+  width: max-content;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 25px 10px 35px;
+}
+
+.header h3 {
+  font-size: 3vh;
+  color: #4c7ceb;
+  font-family: "Momo Signature", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.header li a:hover {
+  color: #4c7ceb;
+  transition: 0.1s ease-in-out;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.sign-up-in {
+  gap: 15px;
+  display: flex;
+}
+
+.sign-up-in a {
+  padding: 13px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f8f9fe;
+  background-color: black;
+}
+
+.sign-up-in a:hover {
+  color: #4c7ceb;
+  background-color: rgba(0, 0, 0, 0.819);
+}
+.text-atas {
+  text-align: left;
+    
+}
+.judul-laman {
+  padding-left: 70px;
+  padding-top: 30px;
+}
+.judul-pengingat {
+  padding-left: 70px;
+  padding-top: 20px;
+}
+.dropdown-max {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu {
+  width: 1px;
+  height: 1px;
+  padding-left: 70px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.dropdown-menu h5 {
+  width: 200px;
+}
+.isi-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fe;
+  min-width: 250px;
+  box-shadow: 1px 1px 0 0;
+}
+.isi-dropdown a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 5px;
+  display: block;
+}
+.isi-dropdown a:hover {
+  background-color: #6a9edc;
+}
+.dropdown-menu:hover .isi-dropdown {
+  display: block;
+}
+.dropdown-menu:hover .jenis-pengingat {
+  background-color: #6a9edc;
+}
+
+.jenis-pengingat {
+  background-color: #f8f9fe;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: small
+}
+.waktu {
+  padding-top: 10px;
+  padding-left: 70px;
+}
+.waktu input[type="time"] {
+  width: 250px;
+  border-radius: 8px;
+  height: 35px;
+  border: none;
+}
+.pengulangan {
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 10px;
+  padding-left: 70px;
+  gap: 10px;
+}
+.pesan-opsional {
+  padding-left: 70px;
+}
+.pesan-opsional a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #4c7ceb;
+  box-shadow: 1px;
+  border-radius: 8px;
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+  padding: 10px 0 1px 0;
+  text-align: center;
+  color: #f8f9fe;
+}
+.pesan-opsional input[type="text"] {
+  width: 250px;
+  height: 100px;
+  border-radius: 8px;
+  border: none;
+}
+.section-kanan {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+.meal {
+  background-color: #f8f9fe;
+  box-shadow: 1px;
+  border-radius: 10px;
+  width: 350px;
+  padding: 5px 0 10px 15px;
+  margin-top: 20px;
+}
+.water {
+  background-color: #f8f9fe;
+  box-shadow: 1px;
+  border-radius: 10px;
+  width: 350px;
+  padding: 5px 0 10px 15px;
+  margin-top: 20px;
+}
+.exercise {
+  background-color: #f8f9fe;
+  box-shadow: 1px;
+  border-radius: 10px;
+  width: 350px;
+  padding: 5px 0 10px 15px;
+  margin-top: 20px;
+}
+.sleep {
+  background-color: #f8f9fe;
+  box-shadow: 1px;
+  border-radius: 10px;
+  width: 350px;
+  padding: 5px 0 10px 15px;
+  margin-top: 20px;
+}
+.meal p {
+  font-weight: bold;
+}
+.water p {
+  font-weight: bold;
+}
+.exercise p {
+  font-weight: bold;
+}
+.sleep p {
+  font-weight: bold;
+}
+.detail-waktu {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+.detail-pesan {
+  font-size: small;
+}
+.footer {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-row-1 {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
+
+.footer-col {
+  margin-right: 50px;
+}
+
+.footer-col {
+  list-style: none;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.footer-col h3 {
+  color: #698ae8;
+  font-family: "Momo Signature", cursive;
+  margin-bottom: 5px;
+}
+.footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+  line-height: 30px;
+  width: max-content;
+  height: max-content;
+}
+
+.footer a:hover {
+  color: #4c7ceb;
+}
+
+.footer-row-2 {
+  align-items: normal;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  border-top: #4a4a4a 1px solid;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: small;
+}
