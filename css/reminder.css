@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Momo Signature';
+  src: url(../assets/font/Momo_Signature/MomoSignature-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0;
   margin: 0;
@@ -105,11 +111,22 @@ body {
 }
 .judul-pengingat {
   padding-left: 70px;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+.judul-pengingat h2 {
+  display: flex;
+}
+.main-content {
+  display: flex;
+  width: 100%;
 }
 .dropdown-max {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .dropdown-menu {
   width: 1px;
@@ -143,7 +160,6 @@ body {
 .dropdown-menu:hover .jenis-pengingat {
   background-color: #6a9edc;
 }
-
 .jenis-pengingat {
   background-color: #f8f9fe;
   color: black;
@@ -155,6 +171,7 @@ body {
   text-align: left;
   font-size: small
 }
+
 .waktu {
   padding-top: 10px;
   padding-left: 70px;
@@ -198,7 +215,18 @@ body {
 .section-kanan {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+.bagian-reminder {
+  padding-top: 40px;
+}
+.teks-kanan {
+  width: 100%
+}
+.teks-kanan p {
+  padding-top: 14.5px;
 }
 .meal {
   background-color: #f8f9fe;
