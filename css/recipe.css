@@ -16,40 +16,34 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%);
+    background-color: #fff;
+    /* background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%); */
     background-repeat: no-repeat;
 }
 .header {  
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
     width: 90%;
 }
 .container { 
     max-width: 1300px;
     width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding-left: 15px;
-    padding-right: 15px; */
 }
 
 #nav-layout {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #f8f9fe;
     color: black;
     /*
     width: 100%; */
     padding: 10px 20px ; 
     position: sticky;
     width: 97%;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 .logo {
-    padding-left: 10px;
+    padding-left: 40px;
 }
 .logo h3 {
     color: #4c7ceb;
@@ -64,7 +58,7 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
     
 }
 .nav-menu ul li {
@@ -73,11 +67,12 @@ body {
     padding: 5px;
     cursor: pointer;
     font-weight: 300;
+    color: #374151;
     
 }
 .nav-menu ul li a {
     text-decoration: none;
-    color: black;
+    color: #374151;
 }
 .nav-menu ul li:hover {
     color: #4c7ceb;
@@ -85,9 +80,14 @@ body {
 .nav-menu ul li a:hover {
     color: #4c7ceb;
 }
-.sign-in {
-    /* display: flex;
-    justify-content: center; */
+.logo-profil img {
+    width: 30px;
+    height: 30px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+/* .sign-in {
+    padding-right: 30px;
 }
 .sign-in ul {
     display: flex;
@@ -108,7 +108,7 @@ body {
 }
 .sign-in ul li a:hover {
     color: #4c7ceb;
-}
+} */
 .main-top-page {
     width: 100%;
     flex-direction: column;
@@ -133,7 +133,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 10px;
-    color: #f8f9fe;
+    color: black;
 }
 .deskripsi-atas {
     display: flex;
@@ -145,7 +145,7 @@ body {
 }
 .deskripsi-atas p {
     padding-top: 10px;
-    color: #f8f9fe;
+    color: black;
     font-size: small;
 }
 .footer {
@@ -209,9 +209,6 @@ body {
    float: left;
    margin-left: 50px;
   
-}
-.filter-group{
-    /* height: max-content; */
 }
 .search-bar input {
    width: 200px;

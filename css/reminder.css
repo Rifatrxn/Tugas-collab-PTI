@@ -8,7 +8,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
-  background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%) no-repeat;
+  background-color: #fff;
+  /* background:  linear-gradient(0deg, #fff 0%, #4c7ceb 100%, #6a9edc 0%) no-repeat; */
 }
 .container {
   width: 100%;
@@ -139,11 +140,17 @@ body {
   width: 200px;
 }
 .isi-dropdown {
-  display: none;
   position: absolute;
   background-color: #f8f9fe;
   min-width: 250px;
-  box-shadow: 1px 1px 0 0;
+  box-shadow: 1px;
+}
+select {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
 }
 .isi-dropdown a {
   text-decoration: none;
@@ -164,7 +171,7 @@ body {
   background-color: #f8f9fe;
   color: black;
   padding: 10px;
-  border: none;
+  border: 1px solid gray;
   cursor: pointer;
   width: 250px;
   border-radius: 8px;
@@ -173,21 +180,27 @@ body {
 }
 
 .waktu {
-  padding-top: 10px;
+  padding-top: 30px;
   padding-left: 70px;
 }
 .waktu input[type="time"] {
-  width: 250px;
+  width: 338px;
   border-radius: 8px;
-  height: 35px;
-  border: none;
+  height: 50px;
+  border: 1px solid gray;
+  background-color: #f8f9fe;
 }
 .pengulangan {
   flex-direction: column;
   display: flex;
   padding-bottom: 10px;
   padding-left: 70px;
-  gap: 10px;
+}
+select {
+  width: 340px;
+  height: 50px;
+  background-color: #f8f9fe;
+  border: 1px solid gray;
 }
 .pesan-opsional {
   padding-left: 70px;
@@ -199,7 +212,7 @@ body {
   background-color: #4c7ceb;
   box-shadow: 1px;
   border-radius: 8px;
-  width: 250px;
+  width: 335px;
   height: 30px;
   margin-top: 20px;
   padding: 10px 0 1px 0;
@@ -207,11 +220,12 @@ body {
   color: #f8f9fe;
 }
 .pesan-opsional input[type="text"] {
-  width: 250px;
+  width: 335px;
   height: 100px;
-  border-radius: 8px;
-  border: none;
+  border-radius: 10px;
+  border:  1px solid gray;
   padding-left: 5px;
+  background-color: #f8f9fe;
 }
 .section-kanan {
   display: flex;
@@ -235,6 +249,7 @@ body {
   width: 350px;
   padding: 5px 0 10px 15px;
   margin-top: 20px;
+  border: 1px solid gray;
 }
 .water {
   background-color: #f8f9fe;
@@ -243,6 +258,7 @@ body {
   width: 350px;
   padding: 5px 0 10px 15px;
   margin-top: 20px;
+  border: 1px solid gray;
 }
 .exercise {
   background-color: #f8f9fe;
@@ -251,6 +267,7 @@ body {
   width: 350px;
   padding: 5px 0 10px 15px;
   margin-top: 20px;
+  border: 1px solid gray;
 }
 .sleep {
   background-color: #f8f9fe;
@@ -259,6 +276,7 @@ body {
   width: 350px;
   padding: 5px 0 10px 15px;
   margin-top: 20px;
+  border: 1px solid gray;
 }
 .meal p {
   font-weight: bold;
@@ -281,8 +299,18 @@ body {
 .detail-pesan {
   font-size: small;
 }
-.toggleswitch input {
-  display: none;
+.tombol-section-kanan {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  margin-top: 5px;
+  color: #f8f9fe;
+  cursor: pointer;
+  background-color: #4c7ceb;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 6px;
+  border: none;
 }
 .footer {
   width: 100%;

@@ -19,10 +19,12 @@
             <li><a href="">Nutrition Intake</a></li>
             <li><a href="./recipe.html">Recipes</a></li>
           </ul>
-          <div class="sign-up-in">
-            <a>Sign Up</a>
-            <a>Sign In</a>
+
+
+          <div class="foto-profil">
+            <img src="../assets/assets-home-foodlog/assets-home/account.png">
           </div>
+
         </div>
     </div>
     
@@ -43,13 +45,14 @@
         </div>
           <div class="dropdown-menu">
           <h5>Jenis Pengingat</h5>
-          <button class="jenis-pengingat">Pilih Jenis</button>
-          <div class="isi-dropdown">
-            <a href="#">Makan</a>
-            <a href="#">Minum</a>
-            <a href="#">Latihan</a>
-            <a href="#">Istirahat</a>
-          </div>
+          <!-- <button class="jenis-pengingat">Pilih Jenis</button> -->
+          <select class="isi-dropdown">
+            <option value="0">-- Pilih Jenis --</option>
+            <option value="1">Istirahat</option>
+            <option value="2">Makan</option>
+            <option value="3">Minum</option>
+            <option value="4">Latihan</option>
+          </select>
         </div>
         
         <div class="menu-lain">
@@ -60,9 +63,12 @@
 
         <div class="pengulangan">
         <h5>Ulangi</h5>
-        <label><input type="checkbox">Setiap Hari</label>
-        <label><input type="checkbox">Weekend</label>
-        <label> <input type="checkbox">Hari Kerja</label>
+        <select>
+          <option value="0">-- Pilih --</option>
+          <option value="1">Setiap Hari</option>
+          <option value="2">Akhir Pekan</option>
+          <option value="3">Hari Kerja</option>
+        </select>
 
         </div>
 
@@ -87,24 +93,28 @@
         <p>Meal</p>
         <span class="detail-waktu">08.00- Setiap hari</span>
         <span class="detail-pesan">Saatnya Sarapan</span>
+        <button class="tombol-section-kanan">+</button>
       </div>
       
       <div class="water">
         <p>Water</p>
         <span class="detail-waktu">09.00- Setiap hari</span>
         <span class="detail-pesan">Jangan Lupa Minum</span>
+        <button class="tombol-section-kanan">+</button>
       </div>
       
       <div class="exercise">
         <p>Exercise</p>
         <span class="detail-waktu">16.00- Seminggu sekali</span>
         <span class="detail-pesan">Sesi Latihan</span>
+        <button class="tombol-section-kanan">+</button>
       </div>
       
       <div class="sleep">
         <p>Sleep</p>
         <span class="detail-waktu">21.00- Setiap hari</span>
         <span class="detail-pesan">Waktunya Tidur</span>
+        <button class="tombol-section-kanan">+</button>
       </div>
     </div>
     </div>
