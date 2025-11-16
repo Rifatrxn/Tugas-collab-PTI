@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Momo Signature';
+  src: url(../assets/font/Momo_Signature/MomoSignature-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +20,11 @@ body {
     background-repeat: no-repeat;
 }
 .header {  
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 90%;
 }
 .container { 
     max-width: 1300px;
@@ -55,7 +64,7 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 60px;
     
 }
 .nav-menu ul li {
@@ -66,13 +75,19 @@ body {
     font-weight: 300;
     
 }
+.nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
 .nav-menu ul li:hover {
+    color: #4c7ceb;
+}
+.nav-menu ul li a:hover {
     color: #4c7ceb;
 }
 .sign-in {
     /* display: flex;
     justify-content: center; */
-    
 }
 .sign-in ul {
     display: flex;
