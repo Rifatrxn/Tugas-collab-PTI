@@ -142,7 +142,13 @@ body {
 
 /* Card yang berada diatas kanan */
 select{
-  appearance: none;
+  /* appearance: none; */
+  background-color: #eff0f5;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 1px solid #8d8c8cd4;
+  height: 50px;
+  font-size: medium;
 }
 
 .card-foodlog:nth-child(2) {
