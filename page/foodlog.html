@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodlog - Hungy</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/foodlog.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <h3>Hungy</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="">Food Log</a></li>
+            <li><a href="">Reminder</a></li>
+            <li><a href="">Budget Counter</a></li>
+            <li><a href="">Nutrition Intake</a></li>
+            <li><a href="">Recipes</a></li>
+          </ul>
+          <img src="../assets/assets-home-foodlog/assets-home/account-2.png" />
+
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="hamburger">☰</label>
+
+          <div class="menu-overlay">
+            <label for="menu" class="close">✕</label>
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="">Food Log</a></li>
+              <li><a href="">Reminder</a></li>
+              <li><a href="">Budget Counter</a></li>
+              <li><a href="">Nutrition Intake</a></li>
+              <li><a href="">Recipes</a></li>
+              <li><a href="">My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menambahkan content disini(antara header dan footer) -->
+      <div class="main-foodlog">
+        <div class="content-main-foodlog">
+          <div class="card-foodlog">
+            <h2>Catat Makanan Baru</h2>
+            <!-- 1 -->
+
+            <div class="input-row" style="">
+              <!-- 2 -->
+              <label>Nama Makanan</label>
+              <input type="text" placeholder="Contoh: Ayam Bakar, Nasi Bakar" />
+            </div>
+
+            <div class="input-row">
+              <!-- 3 -->
+              <div class="input-porsi">
+                <label>Porsi</label>
+                <input type="text" placeholder="Ex: 1" />
+              </div>
+
+              <div class="input-unit">
+                <label>Unit</label>
+                <select>
+                  <option value="">-- Pilih Unit --</option>
+                  <option value="1">Porsi</option>
+                  <option value="2">Kg</option>
+                  <option value="3">Kcal</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <!-- 4 -->
+              <label>Jenis Makanan</label>
+              <select>
+                <option value="">-- Pilihan Jenis Makanan --</option>
+                <option value="1">Sarapan</option>
+                <option value="2">Makan Siang</option>
+                <option value="3">Makan Malam</option>
+              </select>
+            </div>
+
+            <div class="input-row">
+              <!-- 5 -->
+              <div class="input-kalori input-row-5-content">
+                <label>Kalori (kcal)</label>
+                <input type="text" placeholder="0" />
+              </div>
+
+              <div class="input-protein input-row-5-content">
+                <label>Protein (g)</label>
+                <input type="text" placeholder="0" />
+              </div>
+
+              <div class="input-karbo input-row-5-content">
+                <label>Karbohidrat (g)</label>
+                <input type="text" placeholder="0" />
+              </div>
+
+              <div class="input-lemak input-row-5-content">
+                <label>Lemak (g)</label>
+                <input type="text" placeholder="0" />
+              </div>
+            </div>
+
+            <button>Catat Makanan</button>
+          </div>
+
+          <div class="card-foodlog">
+              <div class="card-target-kalori">
+                <h3>Target Kalori Harian</h3>
+                <p>1700 Kalori <span>Target: 2000</span></p>
+                <div class="bar"> <!--Progres Bar-->
+                  <div class="progress-bar">
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-gizi">
+                <div class="card-gizi-content">
+                  <p>Protein</p>
+                  <h2>125<span>g</span></h2>
+                </div>
+                <div class="card-gizi-content">
+                  <p>Karbohidrat</p>
+                  <h2>93<span>g</span></h2>
+                </div>
+                <div class="card-gizi-content">
+                  <p>Lemak</p>
+                  <h2>81<span>g</span></h2>
+                </div>
+                <div class="card-gizi-content">
+                  <p>Kalori</p>
+                  <h2>134<span>g</span></h2>
+                </div>
+              </div>
+
+              <div class="card-mikronutrien">
+                <h3>Mikronutrien Penting</h3>
+                <p>Serat: 25g/30g</p>
+                <p>Vitamin C: 75mg/90mg</p>
+                <p>Zat Besi: 12mg/18mg</p>
+                <p>Kalsium: 800mg/1000mg</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="content-main-foodlog">
+          <div class="card-foodlog"></div>
+          <div class="card-foodlog"></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-row-1">
+          <div class="footer-col-1 footer-col">
+            <h3>Hungy</h3>
+            <p>Our user health is our priority.</p>
+          </div>
+          <div class="footer-col-2 footer-col">
+            <h4>Quick Links</h4>
+            <a href="">About us </a> <a href="">Features</a>
+            <a href="">Pricing</a> <a href="">Blog</a>
+          </div>
+          <div class="footer-col-3 footer-col">
+            <h4>Connect With Us</h4>
+            <a href="">Contact Support</a> <a href="">Career</a>
+            <a href="">Press</a>
+          </div>
+          <div class="footer-col-4 footer-col">
+            <h4>Legal</h4>
+            <a href="">Privacy Policy</a> <a href="">Terms of Service</a>
+          </div>
+        </div>
+
+        <hr />
+        <div class="footer-row-2">
+          <p>&copy; 2025 Hungy. All right reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
