@@ -212,7 +212,7 @@ select {
   background-color: #4c7ceb;
   box-shadow: 1px;
   border-radius: 8px;
-  width: 335px;
+  width: 345px;
   height: 30px;
   margin-top: 20px;
   padding: 10px 0 1px 0;
@@ -242,63 +242,34 @@ select {
 .teks-kanan p {
   padding-top: 14.5px;
 }
-.meal {
+
+.meal{
   background-color: #f8f9fe;
   box-shadow: 1px;
   border-radius: 10px;
   width: 350px;
   padding: 5px 0 10px 15px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
   border: 1px solid gray;
 }
-.water {
-  background-color: #f8f9fe;
-  box-shadow: 1px;
-  border-radius: 10px;
-  width: 350px;
-  padding: 5px 0 10px 15px;
-  margin-top: 20px;
-  border: 1px solid gray;
-}
-.exercise {
-  background-color: #f8f9fe;
-  box-shadow: 1px;
-  border-radius: 10px;
-  width: 350px;
-  padding: 5px 0 10px 15px;
-  margin-top: 20px;
-  border: 1px solid gray;
-}
-.sleep {
-  background-color: #f8f9fe;
-  box-shadow: 1px;
-  border-radius: 10px;
-  width: 350px;
-  padding: 5px 0 10px 15px;
-  margin-top: 20px;
-  border: 1px solid gray;
-}
-.meal p {
-  font-weight: bold;
-}
-.water p {
-  font-weight: bold;
-}
-.exercise p {
-  font-weight: bold;
-}
-.sleep p {
-  font-weight: bold;
-}
-.detail-waktu {
-  font-size: small;
+.content-kanan {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5px;
+  width: 50%;
 }
-.detail-pesan {
+.detail-waktu, .detail-pesan {
   font-size: small;
+  padding-bottom: 5px;
+  margin: 0;
+  font-weight: 200;
 }
+.tombol-plus {
+  padding-top: 35px;
+  padding-left: 110px;
+}
+
 .tombol-section-kanan {
   display: flex;
   width: 40px;
