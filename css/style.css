@@ -33,6 +33,7 @@ body {
   top: 0;
   background-color: #f8f9fe;
   z-index: 2500;
+  border-bottom: 1px solid #4a4a4a4d;
 }
 
 .header img{
@@ -99,6 +100,8 @@ body {
 .sign-up-in {
   gap: 15px;
   display: flex;
+  width: 100%;
+  max-width: 196px;
 }
 
 .sign-up-in a {

@@ -19,6 +19,31 @@ body {
   gap: 20px;
 }
 
+select {
+  appearance: none;
+}
+
+input:focus,
+select:focus {
+  outline: solid 1px #4c7ceb;
+}
+.input-kcal:focus {
+  outline: solid 1px #4c7ceb;
+  border: 1px solid #4c7ceb;
+}
+.input-protein:focus {
+  outline: solid 1px #e3c655;
+  border: 1px solid #e3c655;
+}
+.input-karbo:focus {
+  outline: solid 1px #f5576c;
+  border: 1px solid #f5576c;
+}
+.input-lemak:focus {
+  outline: solid 1px #66bb6a;
+  border: 1px solid #66bb6a;
+}
+
 /* Card berada diatas kiri */
 .card-foodlog:nth-child(1) {
   background-color: #f8f9fe;
@@ -58,7 +83,7 @@ body {
 .card-foodlog:nth-child(1) .input-row:nth-child(3) label {
   font-size: medium;
 }
-.card-foodlog:nth-child(1) .input-row:nth-child(3) input:nth-child(2){
+.card-foodlog:nth-child(1) .input-row:nth-child(3) input:nth-child(2) {
   background-color: #eff0f5;
   padding: 15px 15px;
   border-radius: 8px;
@@ -66,7 +91,7 @@ body {
   height: 1fr;
   font-size: medium;
 }
-.card-foodlog:nth-child(1) .input-row:nth-child(3) select:nth-child(2){
+.card-foodlog:nth-child(1) .input-row:nth-child(3) select:nth-child(2) {
   background-color: #eff0f5;
   padding: 15px 15px;
   border-radius: 8px;
@@ -82,17 +107,16 @@ body {
   width: 100%;
 }
 
-
-.card-foodlog:nth-child(1) .input-row:nth-child(4){
+.card-foodlog:nth-child(1) .input-row:nth-child(4) {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 30px;
 }
-.card-foodlog:nth-child(1) .input-row:nth-child(4) label{
+.card-foodlog:nth-child(1) .input-row:nth-child(4) label {
   font-size: medium;
 }
-.card-foodlog:nth-child(1) .input-row:nth-child(4) select{
+.card-foodlog:nth-child(1) .input-row:nth-child(4) select {
   background-color: #eff0f5;
   padding: 15px 15px;
   border-radius: 8px;
@@ -100,22 +124,22 @@ body {
   font-size: medium;
 }
 
-.card-foodlog:nth-child(1) .input-row:nth-child(5){
+.card-foodlog:nth-child(1) .input-row:nth-child(5) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px 20px;
   margin-top: 30px;
 }
-.input-row-5-content{
+.input-row-5-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.input-row-5-content label{
+.input-row-5-content label {
   font-size: medium;
 }
-.input-row-5-content input{
+.input-row-5-content input {
   padding: 15px 15px;
   background-color: #eff0f5;
   border: 1px solid #8d8c8cd4;
@@ -123,7 +147,7 @@ body {
   font-size: medium;
 }
 
-.card-foodlog:nth-child(1) button{
+.card-foodlog:nth-child(1) button {
   margin-top: 40px;
   width: 100%;
   padding: 20px;
@@ -134,17 +158,13 @@ body {
   cursor: pointer;
   font-size: medium;
 }
-.card-foodlog:nth-child(1) button:hover{
+.card-foodlog:nth-child(1) button:hover {
   background-color: #4c7cebe6;
   color: #eff0f5;
 }
 /* Card yang berada diatas kiri */
 
 /* Card yang berada diatas kanan */
-select{
-  appearance: none;
-}
-
 .card-foodlog:nth-child(2) {
   height: 1fr;
   width: 40%;
@@ -154,17 +174,17 @@ select{
   gap: 20px;
 }
 
-.card-target-kalori{
+.card-target-kalori {
   border: 1px solid #8d8c8c46;
   border-radius: 8px;
-  padding: 20px;
+  padding: 30px 20px;
 }
-.card-target-kalori h3{
+.card-target-kalori h3 {
   font-size: large;
   font-weight: 600;
   margin: 0;
 }
-.card-target-kalori p{
+.card-target-kalori p {
   font-size: medium;
   width: 100%;
   display: flex;
@@ -172,121 +192,125 @@ select{
   margin: 0;
   margin-top: 15px;
 }
-.bar{
+.bar {
   width: 100%;
   border-radius: 20px;
   height: 10px;
   background-color: #a4bcf6;
   margin-top: 10px;
 }
-.progress-bar{
+.progress-bar {
   width: 80%;
   height: 100%;
   border-radius: 20px;
   background-color: #4c7ceb;
 }
 
-.card-gizi{
+.card-gizi {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
 
-.card-gizi-content{
+.card-gizi-content {
   padding: 20px;
   border: 1px solid #8d8c8c46;
-  border-radius: 8px
+  border-radius: 8px;
 }
 
-.card-gizi-content p{
+.card-gizi-content p {
   font-size: medium;
 }
 
-.card-gizi .card-gizi-content h2 span{
+.card-gizi .card-gizi-content h2 span {
   color: #2d3436;
   font-size: small;
   margin-left: 5px;
 }
 
-.card-gizi .card-gizi-content:nth-child(1) h2{
+.card-gizi .card-gizi-content:nth-child(1) h2 {
   color: #4c7ceb;
 }
-.card-gizi .card-gizi-content:nth-child(2) h2{
+.card-gizi .card-gizi-content:nth-child(2) h2 {
   color: #e3c655;
 }
-.card-gizi .card-gizi-content:nth-child(3) h2{
+.card-gizi .card-gizi-content:nth-child(3) h2 {
   color: #f5576c;
 }
-.card-gizi .card-gizi-content:nth-child(4) h2{
+.card-gizi .card-gizi-content:nth-child(4) h2 {
   color: #66bb6a;
 }
 
-.card-mikronutrien{
+.card-mikronutrien {
   border: 1px solid #8d8c8c46;
   border-radius: 8px;
   padding: 20px;
 }
 
-.card-mikronutrien p{
-display: flex;
-justify-content: space-between;
+.card-mikronutrien p {
+  display: flex;
+  justify-content: space-between;
 }
-.card-mikronutrien p span{
+.card-mikronutrien p span {
   color: #4c7ceb;
   font-weight: bold;
   font-size: small;
 }
-.card-mikronutrien p:nth-child(3) span{
+.card-mikronutrien p:nth-child(3) span {
   color: #e3c655;
 }
-.card-mikronutrien p:nth-child(4) span{
+.card-mikronutrien p:nth-child(4) span {
   color: #f5576c;
 }
-.card-mikronutrien p:nth-child(5) span{
+.card-mikronutrien p:nth-child(5) span {
   color: #66bb6a;
 }
 /* Card yang berada diatas kanan */
-.content-main-foodlog:nth-child(2) .card-foodlog-2{
+.content-main-foodlog:nth-child(2) .card-foodlog-2 {
   width: 57%;
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #8d8c8c46;
 }
 
-.card-foodlog-2 h1{
+.card-foodlog-2 h1 {
   margin: 0;
 }
-.card-foodlog-2 p{
+.card-foodlog-2 p {
   color: #8d8c8c;
 }
 
-.card-foodlog-2 table{
+.card-foodlog-2 table {
   width: 100%;
 }
-.card-foodlog-2 td{
+
+thead td{
+  color: #2c3e7597;
+}
+td{
+  width: 100px;
+}
+.card-foodlog-2 td {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-td {
-  border-bottom: 1px solid #8d8c8c46;
-}
-.card-foodlog-2 table td{
+.card-foodlog-2 table td {
   height: 60px;
 }
 
-.img-edit-del{
+.img-edit-del {
   display: flex;
   gap: 30px;
 }
 
-.img-edit-del img{
+.img-edit-del img {
   width: 20px;
   height: 20px;
 }
 
-.img-edit-del a:nth-child(1){
+.img-edit-del a:nth-child(1) {
   background-color: #e3c655;
   width: 30px;
   height: 30px;
@@ -296,7 +320,7 @@ td {
   justify-content: center;
 }
 
-.img-edit-del a:nth-child(2){
+.img-edit-del a:nth-child(2) {
   background-color: red;
   width: 30px;
   height: 30px;
