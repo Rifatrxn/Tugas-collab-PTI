@@ -1,272 +1,193 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hungy | Gambaran Umum Nutrisi</title>
-    <link rel="stylesheet" href="/css/stylereminder.css">
-    
-    <!-- Font Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <span class="logo-icon">🌿</span> Hungy
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Food Log</a></li>
-                <li><a href="#">Reminder</a></li>
-                <li><a href="#">Budget Counter</a></li>
-                <li><a href="#" class="active-link">Nutrition Intake</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#" class="btn btn-primary">Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Hungy</title>
+    <link rel="stylesheet" href="../css/stylereminder.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  </head>
+  <body>
     <div class="container">
+      <div class="header">
+        <div class="nav">
+          <h3>Hungy</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="">Food Log</a></li>
+            <li><a href="">Reminder</a></li>
+            <li><a href="bujet.html">Budget Counter</a></li>
+            <li><a href="">Nutrition Intake</a></li>
+            <li><a href="">Recipes</a></li>
+          </ul>
+          <img src="../assets/assets-dashboard/account.png" />
+        </div>
+      </div>
+
+      <div class="Content-wrapper">
         <!-- HEADER & TABS -->
-        <header class="header">
+        <div class="kepala_header">
             <h1 class="main-title">Gambaran Umum Asupan Nutrisi</h1>
             <div class="tabs">
-                <button class="tab-button active">Harian</button>
+                <button class="tab-button">Harian</button>
                 <button class="tab-button">Mingguan</button>
                 <button class="tab-button">Bulanan</button>
             </div>
-        </header>
+        </div>
 
         <!-- 1. SUMMARY CARDS -->
         <section class="summary-cards">
             <!-- Kalori -->
-            <div class="summary-card" data-color="orange">
-                <div class="icon-placeholder icon-kalori"></div>
+            <div class="summary-card">
+            <span class="material-icons-round besar">whatshot</span>                
                 <div class="details">
                     <p class="label">Kalori</p>
                     <p class="value">1850 <span class="unit">kcal</span></p>
                 </div>
             </div>
             <!-- Protein -->
-            <div class="summary-card" data-color="green">
-                <div class="icon-placeholder icon-protein"></div>
-                <div class="details">
+            <div class="summary-card">
+            <span class="material-icons-round besar">egg_alt</span>             
+                    <div class="details">
                     <p class="label">Protein</p>
                     <p class="value">75 <span class="unit">g</span></p>
                 </div>
             </div>
             <!-- Karbohidrat -->
-            <div class="summary-card" data-color="blue">
-                <div class="icon-placeholder icon-karbo"></div>
-                <div class="details">
+            <div class="summary-card">
+                    <span class="material-icons-round besar">fastfood</span>             
+                    <div class="details">
                     <p class="label">Karbohidrat</p>
                     <p class="value">220 <span class="unit">g</span></p>
                 </div>
             </div>
             <!-- Lemak -->
-            <div class="summary-card" data-color="purple">
-                <div class="icon-placeholder icon-lemak"></div>
-                <div class="details">
+            <div class="summary-card">
+            <span class="material-icons-round besar">lunch_dining</span>                    
+                    <div class="details">
                     <p class="label">Lemak</p>
                     <p class="value">60 <span class="unit">g</span></p>
                 </div>
             </div>
         </section>
+        
 
-        <!-- 2. MAIN GRID (Charts dan Rincian) -->
-        <div class="main-grid">
-            <!-- Kolom Kiri: Tren Makro dan Vitamin -->
-            <div class="grid-left">
-                
-                <!-- Chart 1: Kalori & Makro Nutrisi Seiring Waktu (Simulasi) -->
-                <div class="chart-box">
-                    <h2 class="box-title">Kalori & Makro Nutrisi Seiring Waktu</h2>
-                    <p class="box-subtitle">Tren asupan kalori, protein, karbohidrat, dan lemak Anda daily ini.</p>
-                    <div class="chart-container">
-                        <div class="chart-simulation chart-line">
-                            <div class="axis-y">
-                                <span>800</span><span>600</span><span>400</span><span>200</span><span>0</span>
-                            </div>
-                            <div class="grid-lines">
-                                <div></div><div></div><div></div><div></div><div></div>
-                            </div>
-                            <div class="axis-x">
-                                <span>06</span><span>12</span><span>18</span><span>24</span>
-                            </div>
-                            <div class="chart-legend">
-                                <div><span class="legend-dot orange"></span> Kalori</div>
-                                <div><span class="legend-dot green"></span> Protein</div>
-                                <div><span class="legend-dot blue"></span> Karbohidrat</div>
-                                <div><span class="legend-dot purple"></span> Lemak</div>
-                            </div>
-                        </div>
+        <div class="konten-grid">
+            <div class="konten-kiri">
+                <div class="kartu">
+                    <h3>Kalori & Makro Nutrisi Seiring Waktu</h3>
+                    <p>Tren asupan kalori, protein, karbohidrat, dan lemak Anda daily ini.</p>
+                    <div class="gambar-grafis">
+                        <img class="grafis" src="/assets/Grafis1.png" alt="Kalori & Makro Nutrisi Seiring Waktu Graph" >
                     </div>
                 </div>
-
-                <!-- Chart 2: Tren Asupan Vitamin & Mineral (Simulasi) -->
-                <div class="chart-box">
-                    <h2 class="box-title">Tren Asupan Vitamin & Mineral</h2>
-                    <p class="box-subtitle">Tren asupan vitamin C, kalsium, zat besi, dan vitamin D Anda daily ini.</p>
-                    <div class="chart-container">
-                         <div class="chart-simulation chart-bar">
-                            <div class="axis-y">
-                                <span>250</span><span>200</span><span>150</span><span>100</span><span>50</span><span>0</span>
-                            </div>
-                            <div class="grid-lines">
-                                <div></div><div></div><div></div><div></div><div></div><div></div>
-                            </div>
-                            <div class="bar-groups">
-                                <div class="bar-group" data-label="06:00">
-                                    <div class="bar orange" style="height: 10%;"></div>
-                                    <div class="bar blue" style="height: 10%;"></div>
-                                    <div class="bar purple" style="height: 30%;"></div>
-                                </div>
-                                <div class="bar-group" data-label="12:00">
-                                    <div class="bar orange" style="height: 15%;"></div>
-                                    <div class="bar blue" style="height: 10%;"></div>
-                                    <div class="bar purple" style="height: 80%;"></div>
-                                </div>
-                                <div class="bar-group" data-label="16:00">
-                                    <div class="bar orange" style="height: 10%;"></div>
-                                    <div class="bar blue" style="height: 5%;"></div>
-                                    <div class="bar purple" style="height: 60%;"></div>
-                                </div>
-                                <div class="bar-group" data-label="21:00">
-                                    <div class="bar orange" style="height: 5%;"></div>
-                                    <div class="bar blue" style="height: 10%;"></div>
-                                    <div class="bar purple" style="height: 20%;"></div>
-                                </div>
-                            </div>
-                            <div class="chart-legend">
-                                <div><span class="legend-dot orange"></span> Vitamin C</div>
-                                <div><span class="legend-dot green"></span> Kalsium</div>
-                                <div><span class="legend-dot blue"></span> Zat Besi</div>
-                                <div><span class="legend-dot purple"></span> Vitamin D</div>
-                            </div>
-                            <div class="axis-x-bar-labels">
-                                <span>06:00</span><span>12:00</span><span>16:00</span><span>21:00</span>
-                            </div>
-                        </div>
+                <div class="kartu">
+                    <h3>Tren Asupan Vitamin & Mineral</h3>
+                    <p>Tren asupan vitamin C, kalsium, besi, dan vitamin D Anda daily ini.</p>
+                    <div class="gambar-grafis">
+                        <img class="grafis" src="/assets/Grafis2.png" alt="Tren Asupan Vitamin & Mineral Graph" >
                     </div>
                 </div>
             </div>
 
-            <!-- Kolom Kanan: Rincian -->
-            <div class="grid-right">
-                
-                <!-- Rincian Makro -->
-                <div class="detail-box">
-                    <h2 class="box-title">Rincian Makro</h2>
+            <div class="konten-kanan">
+                <div class="kartu">
+                    <h3>Rincian Makro</h3>
                     <div class="detail-item">
-                        <p class="detail-label">Protein</p>
-                        <p class="detail-target">Target: 80g</p>
-                        <p class="detail-value text-green">75<span class="detail-unit">g</span></p>
-                        <div class="progress-bar"><div class="progress bg-green" style="width: 94%;"></div><span class="percentage">94%</span></div>
+                        <span class="label">Protein</span>
+                        <div class="value">
+                            <strong>75g</strong>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 94%;"></div>
+                            </div>
+                            <span class="percentage">94%</span>
+                        </div>
                     </div>
-                    
                     <div class="detail-item">
-                        <p class="detail-label">Karbohidrat</p>
-                        <p class="detail-target">Target: 250g</p>
-                        <p class="detail-value text-blue">220<span class="detail-unit">g</span></p>
-                        <div class="progress-bar"><div class="progress bg-blue" style="width: 88%;"></div><span class="percentage">88%</span></div>
+                        <span class="label">Karbohidrat</span>
+                        <div class="value">
+                            <strong>220g</strong>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 88%;"></div>
+                            </div>
+                            <span class="percentage">88%</span>
+                        </div>
                     </div>
-                    
                     <div class="detail-item">
-                        <p class="detail-label">Lemak</p>
-                        <p class="detail-target">Target: 70g</p>
-                        <p class="detail-value text-purple">60<span class="detail-unit">g</span></p>
-                        <div class="progress-bar"><div class="progress bg-purple" style="width: 86%;"></div><span class="percentage">86%</span></div>
+                        <span class="label">Lemak</span>
+                        <div class="value">
+                            <strong>60g</strong>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <span class="percentage">80%</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Rincian Vitamin & Mineral -->
-                <div class="detail-box">
-                    <h2 class="box-title">Rincian Vitamin & Mineral</h2>
-                    <!-- Vitamin C -->
-                    <div class="detail-item detail-item-small">
-                        <p class="detail-label">Vitamin C</p>
-                        <p class="detail-target">RDI: 90mg</p>
-                        <p class="detail-value text-orange">80<span class="detail-unit">mg</span></p>
-                        <div class="progress-bar progress-bar-small"><div class="progress bg-orange" style="width: 89%;"></div><span class="percentage">89%</span></div>
+                <div class="kartu">
+                    <h3>Rincian Vitamin & Mineral</h3>
+                    <div class="detail-item">
+                        <span class="label">Vitamin C</span>
+                        <div class="value">
+                            <strong>80mg</strong>
+                            <span class="percentage">25%</span>
+                        </div>
                     </div>
-                    <!-- Kalsium -->
-                    <div class="detail-item detail-item-small">
-                        <p class="detail-label">Kalsium</p>
-                        <p class="detail-target">RDI: 1000mg</p>
-                        <p class="detail-value text-green">900<span class="detail-unit">mg</span></p>
-                        <div class="progress-bar progress-bar-small"><div class="progress bg-green" style="width: 90%;"></div><span class="percentage">90%</span></div>
+                    <div class="detail-item">
+                        <span class="label">Kalsium</span>
+                        <div class="value">
+                            <strong>900mg</strong>
+                            <span class="percentage">90%</span>
+                        </div>
                     </div>
-                    <!-- Zat Besi -->
-                    <div class="detail-item detail-item-small">
-                        <p class="detail-label">Zat Besi</p>
-                        <p class="detail-target">RDI: 18mg</p>
-                        <p class="detail-value text-blue">15<span class="detail-unit">mg</span></p>
-                        <div class="progress-bar progress-bar-small"><div class="progress bg-blue" style="width: 83%;"></div><span class="percentage">83%</span></div>
+                    <div class="detail-item">
+                        <span class="label">Zat Besi</span>
+                        <div class="value">
+                            <strong>15mg</strong>
+                            <span class="percentage">13%</span>
+                        </div>
                     </div>
-                    <!-- Vitamin D -->
-                    <div class="detail-item detail-item-small">
-                        <p class="detail-label">Vitamin D</p>
-                        <p class="detail-target">RDI: 15mcg</p>
-                        <p class="detail-value text-purple">12<span class="detail-unit">mcg</span></p>
-                        <div class="progress-bar progress-bar-small"><div class="progress bg-purple" style="width: 80%;"></div><span class="percentage">80%</span></div>
+                    <div class="detail-item">
+                        <span class="label">Vitamin D</span>
+                        <div class="value">
+                            <strong>12mcg</strong>
+                            <span class="percentage">80%</span>
+                        </div>
                     </div>
                 </div>
-
+              </div>
             </div>
+            </div>
+        
+
+      <div class="footer">
+        <div class="footer-row-1">
+          <div class="footer-col-1 footer-col">
+            <h3>Hungy</h3>
+            <p>Our user health is our priority.</p>
+          </div>
+          <div class="footer-col-2 footer-col">
+            <h4>Quick Links</h4>
+            <a href="">About us </a> <a href="">Features</a>
+            <a href="">Pricing</a> <a href="">Blog</a>
+          </div>
+          <div class="footer-col-3 footer-col">
+            <h4>Connect With Us</h4>
+            <a href="">Contact Support</a> <a href="">Career</a>
+            <a href="">Press</a>
+          </div>
+          <div class="footer-col-4 footer-col">
+            <h4>Legal</h4>
+            <a href="">Privacy Policy</a> <a href="">Terms of Service</a>
+          </div>
         </div>
+
+        <hr />
+        <div class="footer-row-2">
+          <p>&copy; 2025 Hungy. All right reserved.</p>
+        </div>
+      </div>
     </div>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-col footer-brand">
-                <div class="logo">
-                    <span class="logo-icon">🌿</span> Hungy
-                </div>
-                <p>Your partner in healthy living</p>
-                <p>&copy; 2025 Hungy. All rights reserved.</p>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-title">Quick Links</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-title">Connect With Us</h4>
-                <ul>
-                    <li><a href="#">Contact Support</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Press</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-col">
-                <h4 class="footer-title">Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-social">
-                 <div class="social-icons">
-                    <a href="#">F</a> 
-                    <a href="#">T</a> 
-                    <a href="#">I</a> 
-                    <a href="#">L</a>
-                 </div>
-            </div>
-        </div>
-    </footer>
-</body>
+  </body>
 </html>
