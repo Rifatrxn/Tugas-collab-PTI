@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Anggaran Nutrisi</title>
+    <link rel="stylesheet" href="/css/stylereminder.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="nav">
+          <h3>Hungy</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="">Food Log</a></li>
+            <li><a href="">Reminder</a></li>
+            <li><a href="">Budget Counter</a></li>
+            <li><a href="index.html">Nutrition Intake</a></li>
+            <li><a href="">Recipes</a></li>
+          </ul>
+          <img src="https://i.pinimg.com/1200x/6a/40/bd/6a40bdbcb88c1dbb4571080aeccc4790.jpg" />
+        </div>
+      </div>
+    <div class="main-content">
+        <h1>Penghitung Anggaran Nutrisi</h1>
+        <p class="subtitle">Kelola dan lacak pengeluaran makanan dan suplemen Anda dengan mudah.</p>
+
+        <div class="top-cards-grid">
+            <div class="card summary-card1">
+                <h2>Ikhtisar Anggaran Anda</h2>
+                <p class="status">Status anggaran bulanan saat ini.</p>
+                <p>Anggaran Bulanan</p>
+                <p class="budget-amount">Rp 3.000.000</p>
+                <p>Sisa Anggaran</p>
+                <p class="remaining-amount">Rp 1.850.000</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div> 
+                </div>
+                <p class="progress-text">38% Terpakai</p>
+                <p class="total-expense">Total Pengeluaran <strong>Rp 1.150.000</strong></p>
+            </div>
+
+            <div class="card1 add-expense-card">
+                <h2>Tambah Pengeluaran Baru</h2>
+                <p class="status">Catat pengeluaran makanan dan suplemen Anda.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="category">Kategori</label>
+                        <select id="category" name="category">
+                            <option value="">Pilih Kategori</option>
+                            <option value="Makanan Pokok">Makanan Pokok</option>
+                            <option value="Restoran">Restoran</option>
+                            <option value="Suplemen">Suplemen</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Jumlah</label>
+                        <input type="number" id="amount" name="amount" placeholder="Rp 50.000">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Tanggal</label>
+                        <input type="date" id="date" name="date" value="2023-10-26">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Deskripsi</label>
+                        <textarea id="description" name="description" placeholder="Belanja mingguan di supermarket..."></textarea>
+                    </div>
+                    <button type="submit">Tambahkan Pengeluaran</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card1 category-summary-card">
+            <h2>Ringkasan Pengeluaran Kategori</h2>
+            <p class="status">Visualisasi pengeluaran bulanan Anda berdasarkan kategori.</p>
+            <div class="graph-container">
+                <span class="y-axis-label label-600">600.000</span>
+                <span class="y-axis-label label-450">450.000</span>
+                <span class="y-axis-label label-300">300.000</span>
+                <span class="y-axis-label label-150">150.000</span>
+                <span class="y-axis-label label-0">Rp 0</span>
+
+                <div class="bar-wrapper">
+                    <div class="bar bar-makanan-pokok"></div> 
+                    <span class="bar-label">Makanan Pokok</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-restoran"></div>
+                    <span class="bar-label">Restoran</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-suplemen"></div>
+                    <span class="bar-label">Suplemen</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card1 transaction-history-card">
+            <h2>Riwayat Transaksi</h2>
+            <p class="status">Tinjau pengeluaran bulanan Anda sebelumnya.</p>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Deskripsi</th>
+                        <th>Kategori</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-10-26</td>
+                        <td>Belanja mingguan pasar</td>
+                        <td>Makanan Pokok</td>
+                        <td class="amount">Rp 300.000</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-25</td>
+                        <td>Makan siang restoran</td>
+                        <td>Restoran</td>
+                        <td class="amount">Rp 450.000</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-24</td>
+                        <td>Protein powder</td>
+                        <td>Suplemen</td>
+                        <td class="amount">Rp 200.000</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-23</td>
+                        <td>Kopi dan roti</td>
+                        <td>Restoran</td>
+                        <td class="amount">Rp 50.000</td>
+                    </tr>
+                    <tr>
+                        <td>2025-10-22</td>
+                        <td>Sayuran segar</td>
+                        <td>Makanan Pokok</td>
+                        <td class="amount">Rp 150.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="footer-row-1">
+          <div class="footer-col-1 footer-col">
+            <h3>Hungy</h3>
+            <p>Our user health is our priority.</p>
+          </div>
+          <div class="footer-col-2 footer-col">
+            <h4>Quick Links</h4>
+            <a href="">About us </a> <a href="">Features</a>
+            <a href="">Pricing</a> <a href="">Blog</a>
+          </div>
+          <div class="footer-col-3 footer-col">
+            <h4>Connect With Us</h4>
+            <a href="">Contact Support</a> <a href="">Career</a>
+            <a href="">Press</a>
+          </div>
+          <div class="footer-col-4 footer-col">
+            <h4>Legal</h4>
+            <a href="">Privacy Policy</a> <a href="">Terms of Service</a>
+          </div>
+        </div>
+
+        <hr />
+        <div class="footer-row-2">
+          <p>&copy; 2025 Hungy. All right reserved.</p>
+        </div>
+</body>
+</html>
