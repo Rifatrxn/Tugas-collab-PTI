@@ -1,0 +1,722 @@
+/* Global CSS Styling */
+@font-face{
+  font-family: 'Momo Signature';
+  src: url(../assets/font/Momo_Signature/MomoSignature-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100dvh;
+  color: #4a4a4a;
+  background-color: #f8f9fe;
+}
+
+.container {
+    max-width: 2400px;
+    margin: 0 auto;
+    width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 90%;
+}
+
+.header ul {
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  grid-template-rows: (repeat, 1fr);
+  padding-left: 0;
+  text-align: center;
+}
+
+.header li {
+  list-style: none;
+  font-size: medium;
+  font-weight: 300;
+  grid-row: 1;
+  width: max-content;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 35px 0 35px;
+}
+
+.header h3 {
+  font-size: 3vh;
+  color: #4c7ceb;
+  font-family: "Momo Signature", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.header li a:hover {
+  color: #4c7ceb;
+  transition: 0.1s ease-in-out;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.sign-up-in{
+  gap: 15px;
+  display: flex;
+}
+
+.sign-up-in a{
+  padding: 13px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f8f9fe;
+  background-color: black;
+}
+
+.sign-up-in a:hover{
+  color: #4c7ceb;
+  background-color: rgba(0, 0, 0, 0.819);
+}
+
+.footer {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 90px;
+}
+.footer-row-1 {
+  gap: 100px;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
+
+.footer-col {
+  margin-right: 50px;
+}
+
+.footer-col {
+  list-style: none;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.footer-col h3 {
+  color: #4c7ceb;
+  font-family: 'Momo Signature';
+}
+
+.footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+  line-height: 4vh;
+  width: max-content;
+  height: max-content;
+}
+
+.footer a:hover {
+  color: #4c7ceb;
+}
+
+.footer-row-2 {
+  align-items: normal;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  border-top: #4a4a4a 1px solid;
+  padding: 20px 0;
+  margin-top: 10px;
+  font-size: small;
+}
+
+/* Konten utama Ari */
+
+.Content-wrapper {
+    display: flex;
+    padding: 50px 0;
+    gap: 150px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffff;
+  /* background: linear-gradient(0deg,#e5e6eb 0% , #4c7ceb 100%, #6a9edc 0%); */
+}
+
+.kepala_header {
+  display: flex;
+  margin: 0 auto;
+  font-size: 24px;
+  color: black;
+  flex-direction: column;
+    width: 90%;
+}
+
+.main-title {
+}
+
+.tab-button {
+  
+  background-color: #e0e1e6;
+  border-radius: 40px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.summary-cards {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.summary-card {
+  /* border: solid 1px; */
+  /* border-color: #1c3c63; */
+  background-color: #f8f9fe;
+
+  align-items: left;
+
+border-radius: 15px;
+width: 300px;
+height: 150px;
+padding: 15px;
+}
+
+.material-icons-round.besar {
+font-size: 40px;
+}
+
+.label {
+  margin: 10;
+}
+
+.value {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.value .unit {
+  font-size: large;
+  font-weight: none;
+}
+
+.konten-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.konten-kanan, .konten-kiri {
+  background-color: #f8f9fe;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.kartu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.kartu h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.gambar-grafis {
+  width: 100%;
+  height: 550px; /* Adjust height as needed */
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.grafis {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item .label {
+  font-weight: bold;
+  color: #555;
+}
+
+.detail-item .value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar-container {
+  width: 80px;
+  height: 8px;
+  background-color: #e5e6eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 4px;
+}
+
+.percentage {
+  font-size: 14px;
+  color: #ffff;
+  background-color: #333;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+/* BATAS KONTEN I */
+
+/* General Body Styling (adjust if you already have a template body style) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    margin: 0px;
+    padding: 20px; /* Padding around the main content */
+    color: #333333;
+    line-height: 24px; /* Equivalent to 1.6em/1.6 */
+}
+
+/* Main Content Container */
+.main-content {
+    width: 90%;
+    margin: 20px auto; /* Center the content with some top/bottom margin */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker title color */
+    margin-bottom: 10px;
+    font-size: 32px; /* 2em */
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 18px; /* 1.1em */
+}
+
+/* Top Cards Section (Summary and Add Expense) */
+.top-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 30px; /* Space between columns */
+    margin-bottom: 40px;
+}
+
+/* Card Base Style */
+.card {
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    font-size: 21px; /* 1.3em */
+    color: #34495e;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+/* Ringkasan Anggaran Anda Card (Left Top) */
+.summary-card .status {
+    color: #7f8c8d;
+    font-size: 14px; /* 0.9em */
+    margin-bottom: 15px;
+}
+
+.summary-card .budget-amount {
+    font-size: 35px; /* 2.2em */
+    font-weight: bold;
+    color: #2ecc71; /* Green for budget */
+    margin-bottom: 10px;
+}
+
+.summary-card .remaining-amount {
+    font-size: 29px; /* 1.8em */
+    font-weight: bold;
+    color: #2ecc71; /* Green for remaining */
+    margin-bottom: 15px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #2ecc71; /* Green for progress */
+    border-radius: 5px;
+    /* width is set inline in HTML based on data */
+}
+
+.progress-text {
+    text-align: right;
+    font-size: 14px; /* 0.85em */
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.total-expense {
+    font-size: 19px; /* 1.2em */
+    color: #34495e;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+.total-expense strong {
+    color: #e74c3c; /* Red for total expense */
+}
+
+/* Tambah Pengeluaran Baru Card (Right Top) */
+.add-expense-card .form-group {
+    margin-bottom: 18px;
+}
+
+.add-expense-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+    font-size: 15px; /* 0.95em */
+}
+
+.add-expense-card input[type="text"],
+.add-expense-card input[type="number"],
+.add-expense-card input[type="date"],
+.add-expense-card textarea,
+.add-expense-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 16px; /* 1em */
+    color: #333333;
+    background-color: #f8f8f8;
+}
+
+.add-expense-card textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 80px;
+}
+
+.add-expense-card select {
+    /* Basic styling for select */
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Custom arrow for select (SVG data URI - not affected by px rule) */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%2D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-6.5%200-12.3%203.4-14.8%208.7-2.5%205.4-1.1%2011.6%203.4%2015.4l123.6%20123.6c4.6%204.6%2011.6%204.6%2016.2%200l123.6-123.6c4.5-3.8%205.9-10%203.4-15.4z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: 12px auto;
+    padding-right: 35px; /* Make space for custom arrow */
+}
+
+.add-expense-card button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ecc71; /* Green button */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px; /* 1.1em */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-expense-card button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Ringkasan Pengeluaran Kategori (Graph Section) */
+.category-summary-card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.category-summary-card .graph-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Align bars to the bottom */
+    height: 250px; /* Fixed height for the graph area */
+    padding-top: 20px; /* Space for numbers above bars */
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    margin-top: 20px;
+}
+
+.category-summary-card .graph-container::before {
+    content: "Rp";
+    position: absolute;
+    left: -30px; /* Adjust position for "Rp" */
+    top: -10px;
+    font-size: 14px; /* 0.9em */
+    color: #7f8c8d;
+}
+.category-summary-card .graph-container::after {
+    content: "Jumlah"; /* Label for the X-axis */
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    font-size: 14px; /* 0.9em */
+    color: #7f8c8d;
+}
+
+/* Y-axis labels (manual positioning for simplicity without JS) */
+.graph-container .y-axis-label {
+    position: absolute;
+    left: -50px; /* Adjust as needed */
+    font-size: 14px; /* 0.85em */
+    color: #7f8c8d;
+    width: 40px;
+    text-align: right;
+}
+.graph-container .y-axis-label.label-600 { top: 0px; }
+.graph-container .y-axis-label.label-450 { top: 60px; } 
+.graph-container .y-axis-label.label-300 { top: 120px; } 
+.graph-container .y-axis-label.label-150 { top: 180px; } 
+.graph-container .y-axis-label.label-0 { bottom: -10px; left: -30px;} 
+
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Width of each bar wrapper */
+    margin: 0px 15px; /* Space between bars */
+}
+
+.bar {
+    width: 70px; /* Width of the actual bar */
+    background-color: #2ecc71; /* Default bar color */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: height 0.5s ease; /* Smooth animation for height changes */
+}
+
+/* Specific heights using px */
+.bar-makanan-pokok { height: 180px; background-color: #2ecc71; } 
+.bar-restoran { height: 120px; background-color: #9b59b6; } 
+.bar-suplemen { height: 80px; background-color: #e74c3c; } 
+
+.bar-label {
+    margin-top: 10px;
+    font-size: 14px; /* 0.9em */
+    color: #555555;
+    text-align: center;
+}
+
+/* Riwayat Transaksi (Table Section) */
+.transaction-history-card {
+    margin-top: 40px;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px; /* Base font size for table */
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.transaction-table th {
+    background-color: #f0f4f7;
+    color: #34495e;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px; /* 0.9em */
+}
+
+.transaction-table tr:hover {
+    background-color: #f9fbfd;
+}
+
+.transaction-table td.amount {
+    color: #2ecc71; /* Green for positive amounts */
+    font-weight: bold;
+}
+
+/* Responsive Adjustments (Note: These media queries still use relative sizes in the condition, 
+   but the styles inside use only px units) */
+@media (max-width: 768px) {
+    .top-cards-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .main-content {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 29px; /* 1.8em */
+    }
+
+    .subtitle {
+        font-size: 16px; /* 1em */
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .summary-card .budget-amount,
+    .summary-card .remaining-amount {
+        font-size: 29px; /* 1.8em */
+    }
+
+    .add-expense-card input,
+    .add-expense-card textarea,
+    .add-expense-card select,
+    .add-expense-card button {
+        padding: 10px;
+        font-size: 15px; /* 0.95em */
+    }
+
+    .category-summary-card .graph-container {
+        height: 200px; /* Adjust graph height */
+        padding-top: 15px;
+    }
+
+    .category-summary-card .graph-container .y-axis-label {
+        left: -40px;
+    }
+    .graph-container .y-axis-label.label-600 { top: 0px; }
+    .graph-container .y-axis-label.label-450 { top: 45px; } 
+    .graph-container .y-axis-label.label-300 { top: 90px; }
+    .graph-container .y-axis-label.label-150 { top: 135px; }
+    .graph-container .y-axis-label.label-0 { bottom: -10px; left: -30px;}
+
+    .bar-wrapper {
+        width: 80px;
+        margin: 0px 10px;
+    }
+
+    .bar {
+        width: 60px;
+    }
+
+    .bar-makanan-pokok { height: 150px; }
+    .bar-restoran { height: 100px; }
+    .bar-suplemen { height: 70px; }
+
+    .transaction-table th,
+    .transaction-table td {
+        padding: 10px 12px;
+        font-size: 14px; /* 0.85em */
+    }
+}
+
+@media (max-width: 480px) {
+    .summary-card .budget-amount,
+    .summary-card .remaining-amount {
+        font-size: 24px; /* 1.5em */
+    }
+    .total-expense {
+        font-size: 18px; /* 1.1em */
+    }
+    .transaction-table th,
+    .transaction-table td {
+        padding: 8px 10px;
+        font-size: 13px; /* 0.8em */
+    }
+    .category-summary-card .graph-container .y-axis-label {
+        left: -35px;
+        font-size: 12px; /* 0.75em */
+    }
+    .category-summary-card .graph-container::before {
+        left: -25px;
+    }
+     .bar-wrapper {
+        width: 60px;
+        margin: 0px 5px;
+    }
+    .bar {
+        width: 40px;
+    }
+}
