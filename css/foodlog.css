@@ -268,12 +268,14 @@ select:focus {
 }
 /* Card yang berada diatas kanan */
 .content-main-foodlog:nth-child(2) .card-foodlog-2 {
-  width: 57%;
+  width: 100%;
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #8d8c8c46;
 }
-
+.border-bottom-content{
+  border-bottom: 1px solid #4c7ceb;
+}
 .card-foodlog-2 h1 {
   margin: 0;
 }
@@ -284,12 +286,8 @@ select:focus {
 .card-foodlog-2 table {
   width: 100%;
 }
-
 thead td{
   color: #2c3e7597;
-}
-td{
-  width: 100px;
 }
 .card-foodlog-2 td {
   justify-content: center;
@@ -299,10 +297,13 @@ td{
 .card-foodlog-2 table td {
   height: 60px;
 }
-
+td{
+  width: 150px;
+}
 .img-edit-del {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .img-edit-del img {
