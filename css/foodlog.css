@@ -51,6 +51,7 @@ select:focus {
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #8d8c8c46;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.1);
 }
 
 .card-foodlog:nth-child(1) h2 {
@@ -88,7 +89,6 @@ select:focus {
   padding: 15px 15px;
   border-radius: 8px;
   border: 1px solid #8d8c8cd4;
-  height: 1fr;
   font-size: medium;
 }
 .card-foodlog:nth-child(1) .input-row:nth-child(3) select:nth-child(2) {
@@ -96,7 +96,6 @@ select:focus {
   padding: 15px 15px;
   border-radius: 8px;
   border: 1px solid #8d8c8cd4;
-  height: 1fr;
   font-size: medium;
 }
 .input-porsi,
@@ -166,7 +165,6 @@ select:focus {
 
 /* Card yang berada diatas kanan */
 .card-foodlog:nth-child(2) {
-  height: 1fr;
   width: 40%;
   display: grid;
   grid-template-rows: repeat(3, max-content);
@@ -266,14 +264,20 @@ select:focus {
 .card-mikronutrien p:nth-child(5) span {
   color: #66bb6a;
 }
+.card-target-kalori, .card-mikronutrien, .card-gizi-content{
+    box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.1);
+}
 /* Card yang berada diatas kanan */
+
+/* Card dibawah */
 .content-main-foodlog:nth-child(2) .card-foodlog-2 {
   width: 100%;
   padding: 20px;
   border-radius: 15px;
   border: 1px solid #8d8c8c46;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.1);
 }
-.border-bottom-content{
+.border-bottom-content {
   border-bottom: 1px solid #4c7ceb;
 }
 .card-foodlog-2 h1 {
@@ -286,7 +290,7 @@ select:focus {
 .card-foodlog-2 table {
   width: 100%;
 }
-thead td{
+thead th {
   color: #2c3e7597;
 }
 .card-foodlog-2 td {
@@ -297,7 +301,7 @@ thead td{
 .card-foodlog-2 table td {
   height: 60px;
 }
-td{
+td {
   width: 150px;
 }
 .img-edit-del {
