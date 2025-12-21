@@ -226,3 +226,11 @@ body {
   font-family: "Momo Signature";
   color: #4c7ceb;
 }
+
+.profile img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
