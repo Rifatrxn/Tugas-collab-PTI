@@ -32,16 +32,16 @@ select:focus {
   border: 1px solid #4c7ceb;
 }
 .input-protein:focus {
-  outline: solid 1px #e3c655;
-  border: 1px solid #e3c655;
+  outline: solid 1px #4c7ceb;
+  border: 1px solid #4c7ceb;
 }
 .input-karbo:focus {
-  outline: solid 1px #f5576c;
-  border: 1px solid #f5576c;
+  outline: solid 1px #4c7ceb;
+  border: 1px solid #4c7ceb;
 }
 .input-lemak:focus {
-  outline: solid 1px #66bb6a;
-  border: 1px solid #66bb6a;
+  outline: solid 1px #4c7ceb;
+  border: 1px solid #4c7ceb;
 }
 
 /* Card berada diatas kiri */
@@ -136,38 +136,7 @@ select:focus {
   gap: 8px;
   width: 1fr;
 }
-@media (max-width: 900px) {
-  .card-foodlog:nth-child(1) .input-row:nth-child(5) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    display: grid;
-  }
 
-  .img-div{
-    display: none;
-  }
-
-  .input-row-5-content {
-    grid-column: 1;
-    width: 100%;
-  }
-  .input-kalori {
-    grid-row: 1;
-  }
-  .input-protein {
-    grid-row: 2;
-  }
-  .input-karbo {
-    grid-row: 3;
-  }
-  .input-lemak {
-    grid-row: 4;
-  }
-
-  .input-porsi, .input-unit{
-    width: 50%;
-  }
-}
 .input-row-5-content label {
   font-size: medium;
 }
@@ -264,13 +233,13 @@ select:focus {
   color: #4c7ceb;
 }
 .card-gizi .card-gizi-content:nth-child(2) h2 {
-  color: #e3c655;
+  color: #4c7ceb;
 }
 .card-gizi .card-gizi-content:nth-child(3) h2 {
-  color: #f5576c;
+  color: #4c7ceb;
 }
 .card-gizi .card-gizi-content:nth-child(4) h2 {
-  color: #66bb6a;
+  color: #4c7ceb;
 }
 
 .card-mikronutrien {
@@ -289,13 +258,13 @@ select:focus {
   font-size: small;
 }
 .card-mikronutrien p:nth-child(3) span {
-  color: #e3c655;
+  color: #4c7ceb;
 }
 .card-mikronutrien p:nth-child(4) span {
-  color: #f5576c;
+  color: #4c7ceb;
 }
 .card-mikronutrien p:nth-child(5) span {
-  color: #66bb6a;
+  color: #4c7ceb;
 }
 .card-target-kalori,
 .card-mikronutrien,
@@ -351,7 +320,7 @@ td {
 }
 
 .img-edit-del a:nth-child(1) {
-  background-color: #e3c655;
+  background-color: #4c7ceb;
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -361,11 +330,44 @@ td {
 }
 
 .img-edit-del a:nth-child(2) {
-  background-color: red;
+  background-color: rgb(229, 8, 8);
   width: 30px;
   height: 30px;
   border-radius: 5px;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .card-foodlog:nth-child(1) .input-row:nth-child(5) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+  }
+
+  .img-div{
+    display: none;
+  }
+
+  .input-row-5-content {
+    grid-column: 1;
+    width: 100%;
+  }
+  .input-kalori {
+    grid-row: 1;
+  }
+  .input-protein {
+    grid-row: 2;
+  }
+  .input-karbo {
+    grid-row: 3;
+  }
+  .input-lemak {
+    grid-row: 4;
+  }
+
+  .input-porsi, .input-unit{
+    width: 50%;
+  }
 }

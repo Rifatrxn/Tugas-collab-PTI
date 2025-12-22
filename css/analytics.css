@@ -36,6 +36,9 @@ body {
     font-weight: 500;
 }
 
+.header ul a{
+    text-decoration: none;
+}
 
 .header ul li:hover{
     background-color: #4c7ceb;
@@ -281,7 +284,7 @@ body {
 .title-analyt-2-2 a{
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: #4c7ceb;
 }
 
